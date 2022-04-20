@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <section class="langSection">
+        <select id="language">
+          <option value="english">English</option>
+          <option value="persian">فارسی</option>
+        </select>
+      </section>
+      <section class="dateSection">
+        <div class="date"></div>
+        <div class="hour"></div>
+      </section>
+    </header>
+    <main class="inputs">
+      <section class="texts">
+        <h1>Expense Tracker</h1>
+        <h2>Add a New Item:</h2>
+      </section>
+      <section class="form">
+        <div class="nameSection">
+          <label id="nameLabel">Name</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="date__amountSection">
+          <label id="dateLabel">Date</label>
+          <input type="date" id="date" />
+          <label id="amountLabel">Amount</label>
+          <input type="text" id="amount" />
+          <select id="selector">
+            <option id="choose" value="empty">Choose</option>
+            <option id="rial" value="﷼">Rial</option>
+            <option id="dollar" value="$">Dollar</option>
+            <option id="euro" value="€">Euro</option>
+            <option id="pound" value="£">Pound</option>
+          </select>
+        </div>
+      </section>
+      <section class="btnSection">
+        <input type="button" class="btns" id="btn" value="Add Expense" />
+        <input type="button" class="btns" id="clear" value="Clear the List" />
+      </section>
+      <table>
+        <thead>
+          <tr>
+            <th id="headName">Name</th>
+            <th id="headDate">Date</th>
+            <th id="headAmount">Amount</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
